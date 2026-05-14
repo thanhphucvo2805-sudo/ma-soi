@@ -1,0 +1,19 @@
+{
+  "name": "ma-soi-game",
+  "version": "1.0.0",
+  "description": "Game Ma sói online cho 15 người chơi",
+  "main": "server/index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && node index.js",
+    "client": "cd client && npm run dev",
+    "build": "cd client && npm run build",
+    "start": "npm run server"
+  },
+  "keywords": ["mafia", "werewolf", "game"],
+  "author": "thanhphucvo2805-sudo",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+}
